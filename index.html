@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação do Script - Admin V2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f111a;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e1b4b 0%, #311042 100%);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 2px solid #8b5cf6;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #a78bfa;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .script-box {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .script-box h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        code {
+            background-color: #0f172a;
+            color: #f43f5e;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.95rem;
+        }
+
+        .pre-code {
+            background-color: #0f172a;
+            color: #34d399;
+            padding: 15px;
+            border-radius: 6px;
+            display: block;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: 10px;
+            border-left: 4px solid #34d399;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: #f43f5e;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 5px;
+        }
+
+        .comando-card {
+            background-color: #1e293b;
+            border-left: 4px solid #8b5cf6;
+            border-radius: 0 8px 8px 0;
+            padding: 20px;
+            margin-bottom: 15px;
+            transition: transform 0.2s;
+        }
+
+        .comando-card:hover {
+            transform: translateX(5px);
+            background-color: #243249;
+        }
+
+        .comando-nome {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #f1f5f9;
+            margin-bottom: 5px;
+        }
+
+        .comando-nome span {
+            color: #a78bfa;
+            background-color: #2e1065;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin-left: 10px;
+        }
+
+        .comando-desc {
+            color: #cbd5e1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Admin OP V2 - Guia de Comandos</h1>
+        <p>Aprenda a usar todas as funções do menu e veja o código de ativação.</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Bloco do Script de Inicialização -->
+        <div class="script-box">
+            <h3>🚀 Como Executar o Menu</h3>
+            <p>Copie o código abaixo e cole no seu executor do Roblox (como Delta, Fluxus, Vega X, etc.):</p>
+            <div class="pre-code">loadstring(game:HttpGet("https://githubusercontent.com"))()</div>
+        </div>
+
+        <h2 class="section-title">Lista de Comandos</h2>
+
+        <!-- COMANDO 1 -->
+        <div class="comando-card">
+            <div class="comando-nome">Fly <span>[Movimentação]</span></div>
+            <div class="comando-desc">Permite que o seu personagem voe pelo mapa. Use as teclas do teclado ou botões digitais para controlar a direção e a altura.</div>
+        </div>
+
+        <!-- COMANDO 2 -->
+        <div class="comando-card">
+            <div class="comando-nome">Speed [Valor] <span>[Atributos]</span></div>
+            <div class="comando-desc">Altera a velocidade de caminhada do seu avatar. Substitua o valor pelo número desejado (Exemplo: <code>Speed 50</code>).</div>
+        </div>
+
+        <!-- COMANDO 3 -->
+        <div class="comando-card">
+            <div class="comando-nome">JumpPower [Valor] <span>[Atributos]</span></div>
+            <div class="comando-desc">Aumenta a força do pulo do seu personagem, permitindo alcançar lugares muito altos no mapa.</div>
+        </div>
+
+        <!-- COMANDO 4 -->
+        <div class="comando-card">
+            <div class="comando-nome">Teleport [Jogador] <span>[Teletransporte]</span></div>
+            <div class="comando-desc">Teleporta instantaneamente o seu avatar até a localização exata do jogador digitado.</div>
+        </div>
+
+        <!-- COMANDO 5 -->
+        <div class="comando-card">
+            <div class="comando-nome">Esp Player <span>[Visual]</span></div>
+            <div class="comando-desc">Ativa uma linha ou caixa colorida ao redor de outros jogadores, permitindo vê-los através das paredes.</div>
+        </div>
+
+        <!-- COMANDO 6 -->
+        <div class="comando-card">
+            <div class="comando-nome">Infinite Yield <span>[Outros]</span></div>
+            <div class="comando-desc">Abre um menu secundário integrado com centenas de comandos de administração pública adicionais.</div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Criado por swat07script77 &copy; 2026. Este site é apenas para fins informativos de documentação.</p>
+    </footer>
+
+</body>
+</html>
